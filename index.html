@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen bg-[darkcyan]">
+      <div
+        class="rounded-lg bg-white shadow-xl w-[400px] h-[600px] flex flex-col pb-8 px-2"
+      >
+        <div class="rounded-lg overflow-hidden py-2">
+          <img
+            id="cover"
+            class="h-full w-full object-cover"
+            src="./assets/images/fourth-of-july.jpeg"
+            alt="Player image"
+          />
+        </div>
+        <audio id="song" src="./assets/songs/fourth-of-july.mp3"></audio>
+
+        <div class="bg-[darkgray] overflow-hidden w-full h-1 rounded mt-5">
+          <div id="progress-bar" class="bg-[red] h-full w-[0]"></div>
+        </div>
+        <div class="flex justify-between px-4 items-center mt-auto">
+          <button
+            class="h-[60px] w-[60px] rounded-full bg-[darkcyan] text-[20px]"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button
+            id="play-button"
+            class="h-[80px] w-[80px] rounded-full bg-[darkcyan] text-[20px]"
+          >
+            <i id="play-button-icon" class="fa-solid fa-play"></i>
+          </button>
+          <button
+            id="next-button"
+            class="h-[60px] w-[60px] rounded-full bg-[darkcyan] text-[20px]"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js"></script>
+</html>
